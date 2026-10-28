@@ -1,0 +1,18 @@
+[project]
+name = "omnicontent-ai"
+version = "0.1.0"
+description = "Local-first tool that turns audio, video and text into social posts, threads and newsletters."
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Mario Medone" }]
+
+[tool.pyright]
+pythonVersion = "3.10"
+typeCheckingMode = "strict"
+# Third-party libraries without type information (faster-whisper, av, ...)
+reportMissingTypeStubs = false
+reportUnknownMemberType = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,34 @@
+# --- Secrets: never commit your real .env ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Generated content ---
+output/
+*.mp3
+*.mp4
+*.wav
+*.m4a
+*.webm
+*.mkv
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
